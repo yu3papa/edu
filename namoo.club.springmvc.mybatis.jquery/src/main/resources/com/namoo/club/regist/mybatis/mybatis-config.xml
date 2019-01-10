@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <typeAlias type="com.namoo.club.regist.domain.entity.Towner"     alias="Towner" />
+        <typeAlias type="com.namoo.club.regist.domain.entity.Club"       alias="Club" />
+        <typeAlias type="com.namoo.club.regist.domain.entity.ClubAdmin"  alias="ClubAdmin" />
+        <typeAlias type="com.namoo.club.regist.domain.entity.ClubMember" alias="ClubMember" />
+        <typeAlias type="com.namoo.club.util.enumtype.Gender"            alias="Gender" />
+    </typeAliases>
+    
+    <typeHandlers>
+        <typeHandler javaType="Gender" jdbcType="CHAR"
+            handler="com.namoo.club.regist.mybatis.typehandler.GenderToCharTypeHandler"/>
+    </typeHandlers>
+    
+</configuration>

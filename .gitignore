@@ -1,0 +1,10 @@
+.classpath
+.project
+.springBeans
+.settings/
+target/
+build/
+workspaces/
+bin/
+lib/
+*.jar
